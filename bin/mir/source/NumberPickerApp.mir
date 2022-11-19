@@ -1,0 +1,74 @@
+[ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc"; @line = 7; ]
+import Toybox.Application;
+[ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc"; @line = 8; ]
+import Toybox.Lang;
+[ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc"; @line = 9; ]
+import Toybox.WatchUi;
+[ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc"; @line = 12; ]
+class NumberPickerApp extends Application.AppBase{
+    [ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc"; @line = 12; ]
+    <init> {
+    }
+    [ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc"; @line = 12; ]
+    static
+    <init> {
+    }
+    //! Constructor
+    [ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc"; @line = 15; ]
+    public
+    function initialize() as Void {
+_home_artaud_Projects_urbandroid_ciqtest_ciqtest_source_NumberPickerApp_mc_15_33_start:
+[ "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc" 16 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_home_artaud_Projects_urbandroid_ciqtest_ciqtest_source_NumberPickerApp_mc_15_33_stop:
+    }
+    //! Handle app startup
+    //! @param state Startup arguments
+    [ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc"; @line = 21; ]
+    public
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    //! Handle app shutdown
+    //! @param state Shutdown arguments
+    [ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc"; @line = 26; ]
+    public
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    //! Return the initial views for the app
+    //! @return Array Pair [View, InputDelegate]
+    [ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc"; @line = 31; ]
+    public
+    function getInitialView() as Array<Views or InputDelegates> or Null {
+_home_artaud_Projects_urbandroid_ciqtest_ciqtest_source_NumberPickerApp_mc_31_72_start:
+[ "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc" 32 8 ]
+        [ "_home_artaud_Projects_urbandroid_ciqtest_ciqtest_source_NumberPickerApp_mc_31_72_start" "_home_artaud_Projects_urbandroid_ciqtest_ciqtest_source_NumberPickerApp_mc_31_72_stop" ]
+        %view.1 = local;
+        %tmp.4 = getm $;
+        %tmp.5 = getv %tmp.4 :NumberPickerView;
+        %tmp.1 = newc %tmp.5 ();
+        lputv %view.1 %tmp.1;
+[ "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc" 33 8 ]
+        [ "_home_artaud_Projects_urbandroid_ciqtest_ciqtest_source_NumberPickerApp_mc_31_72_start" "_home_artaud_Projects_urbandroid_ciqtest_ciqtest_source_NumberPickerApp_mc_31_72_stop" ]
+        %delegate.2 = local;
+        %tmp.9 = getm $;
+        %tmp.10 = getv %tmp.9 :BaseInputDelegate;
+        %tmp.12 = lgetv %view.1;
+        %tmp.6 = newc %tmp.10 (%tmp.12);
+        lputv %delegate.2 %tmp.6;
+[ "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc" 34 8 ]
+        %tmp.13 = newa Array<Views or InputDelegates> 2;
+        %tmp.15 = lgetv %view.1;
+        %tmp.16 = dup %tmp.13;
+        %tmp.17 = aputv %tmp.16 0 %tmp.15;
+        %tmp.19 = lgetv %delegate.2;
+        %tmp.20 = dup %tmp.17;
+        %tmp.21 = aputv %tmp.20 1 %tmp.19;
+        ret %tmp.21;
+_home_artaud_Projects_urbandroid_ciqtest_ciqtest_source_NumberPickerApp_mc_31_72_stop:
+    }
+}
+[ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/NumberPickerApp.mc"; @line = 7; ]
+<init> {
+}

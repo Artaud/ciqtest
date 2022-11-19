@@ -1,0 +1,45 @@
+[ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/CommListener.mc"; @line = 1; ]
+import Toybox.Communications;
+[ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/CommListener.mc"; @line = 3; ]
+class CommListener extends Communications.ConnectionListener{
+    [ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/CommListener.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/CommListener.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/CommListener.mc"; @line = 4; ]
+    function initialize() as Void {
+_home_artaud_Projects_urbandroid_ciqtest_ciqtest_source_CommListener_mc_4_22_start:
+[ "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/CommListener.mc" 5 4 ]
+        %tmp.1 = getm $.Toybox.Communications;
+        %tmp.2 = getv %tmp.1 :ConnectionListener;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_home_artaud_Projects_urbandroid_ciqtest_ciqtest_source_CommListener_mc_4_22_stop:
+    }
+    [ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/CommListener.mc"; @line = 7; ]
+    function onComplete() {
+_home_artaud_Projects_urbandroid_ciqtest_ciqtest_source_CommListener_mc_7_22_start:
+[ "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/CommListener.mc" 8 4 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "Transmit Complete";
+        invoke %tmp.2 %tmp.3(%tmp.4);
+_home_artaud_Projects_urbandroid_ciqtest_ciqtest_source_CommListener_mc_7_22_stop:
+    }
+    [ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/CommListener.mc"; @line = 11; ]
+    function onError() {
+_home_artaud_Projects_urbandroid_ciqtest_ciqtest_source_CommListener_mc_11_19_start:
+[ "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/CommListener.mc" 12 4 ]
+        %tmp.2 = getv ? :System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "Transmit Failed";
+        invoke %tmp.2 %tmp.3(%tmp.4);
+_home_artaud_Projects_urbandroid_ciqtest_ciqtest_source_CommListener_mc_11_19_stop:
+    }
+}
+[ @file = "/home/artaud/Projects/urbandroid/ciqtest/ciqtest/source/CommListener.mc"; @line = 1; ]
+<init> {
+}
